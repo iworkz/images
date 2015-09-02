@@ -1,0 +1,3 @@
+Use Icon Slage.
+
+Small icons (16 and 32) use light image, for other use flat image. (They can be composed in Icon Slate).
