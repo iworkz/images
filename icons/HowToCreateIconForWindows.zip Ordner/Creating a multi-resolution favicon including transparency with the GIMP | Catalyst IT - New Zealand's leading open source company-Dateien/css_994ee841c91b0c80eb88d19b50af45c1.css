@@ -1,0 +1,7 @@
+
+
+
+
+
+
+a:link,a:visited{text-decoration:underline !important;}#site-name a:link,#site-name a:visited{text-decoration:none !important;}#content a:link:after,#content a:visited:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}#content,#content .section{float:none;width:100%;margin:0 !important;padding:0 !important;}body,#page-wrapper,#page,#main-wrapper,#main,#content,#content .section{color:#000;background-color:transparent !important;background-image:none !important;}#skip-to-nav,#navigation,.region-sidebar-first,.region-sidebar-second,#footer,.breadcrumb,div.tabs,.links,.taxonomy,.book-navigation,.forum-topic-navigation,.pager,.feed-icons{visibility:hidden;display:none;}#page-wrapper{overflow-y:visible;}.view-featured-projects a:link:after,.view-featured-projects a:visited:after,#block-portfolio-portfolio_categories{display:none;visibility:hidden;}.view-featured-projects .view-content{width:905px;}#breadcrumb-wrapper,#search-box,#header-login{display:none;visibility:hidden;}#header{height:100px;}.region-page-closure ul{display:block;position:relative;top:0;right:0;}.region-page-closure .leaf{display:none;visibility:hidden;}.region-page-closure .last{display:block;visibility:visible;}h2,.field-field-sub-title,.field-field-featuretext,.firstparagraph{color:#4C4C4C;}

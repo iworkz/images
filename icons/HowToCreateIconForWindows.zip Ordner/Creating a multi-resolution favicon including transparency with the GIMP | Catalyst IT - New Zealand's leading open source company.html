@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Creating a multi-resolution favicon including transparency with
+ the GIMP | Catalyst IT - New Zealand's leading open source company</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="http://catalyst.net.nz/sites/all/themes/catalyst/favicon.ico" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" media="all" href="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/css_fe9cdbd3b7c2989cf3b31538249c7d4b.css">
+<link type="text/css" rel="stylesheet" media="print" href="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/css_994ee841c91b0c80eb88d19b50af45c1.css">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/catalyst/css/ie.css?p" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/catalyst/css/ie6.css?p" />
+<![endif]-->
+  <script src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/jquery_003.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/drupal.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/googleanalytics.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/superfish.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/jquery.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/jquery_005.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/nice_menus.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/sevenup.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/sevenup_black.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/jquery_002.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/jquery_004.js"></script>
+<script type="text/javascript" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/control.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "nice_menus_options": { "delay": 800, "speed": 1 } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(document).ready(function(){
+    var options = {  
+      enableClosing: true,
+      enableQuitBuggingMe: true,
+      overlayColor: "#000000",  
+      lightboxColor: "#ffffff",
+      borderColor: "#6699ff",
+      
+      overrideLightbox: false,
+      lightboxHTML: null,
+      showToAllBrowsers: false
+    };
+    sevenUp.plugin.black.test(options);
+  });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in node-type-page no-sidebars page-tutorial-creating-a-multi-resolution-favicon section-tutorial">
+
+      <div id="skip-to-nav"><a href="#main-menu">Jump to Navigation</a></div>
+    
+  <!--<div id="change-region">
+  	<p><a href="#">Change your region</a> </p>
+  </div> #change-region -->
+
+  <div id="page-wrapper"><div id="page">
+
+    <div id="header"><div class="section clearfix">
+
+              <a href="http://catalyst.net.nz/" title="Home" rel="home" id="logo"><img src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/logo.png" alt="Home"></a>
+      
+	<div id="header-rt">
+    	<div id="header-login">	  	
+			  	<p><a href="https://wrms.catalyst.net.nz/">CLIENT WORK REQUEST</a></p>
+		</div>
+		<!-- <div id="header-login">	  	
+						  	<p><a href="/user">CLIENT LOGIN</a></p>
+		 			</div>#header-login -->  
+				
+			    	<div id="search-box"><form action="/tutorial/creating-a-multi-resolution-favicon" accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <label class="visible" for="edit-search-theme-form-1">Search </label>
+ <input maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" autocomplete="off" class="form-text" type="text">
+</div>
+<input name="op" id="edit-submit" value="" class="form-submit" type="submit">
+<input name="form_build_id" id="form-PT2f1jEADHt_KEduMAofXelBS1cnROBvSwLVTcB3SSY" value="form-PT2f1jEADHt_KEduMAofXelBS1cnROBvSwLVTcB3SSY" type="hidden">
+<input name="form_id" id="edit-search-theme-form" value="search_theme_form" type="hidden">
+</div>
+
+</div></form>
+</div>
+	    	</div><!-- #header-rt -->
+      
+      
+    </div></div> <!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix with-navigation">
+
+      <div id="content" class="column"><div class="section">
+
+        
+        <!--          <h1 class="title">Creating a multi-resolution favicon including transparency with the GIMP</h1>
+        -->
+                
+                        
+        
+        <div id="content-area">
+		  <div id="node-23592" class="node node-type-page build-mode-full clearfix">
+  
+  
+  
+  <div class="content">
+    <div class="fieldgroup group-featurebox">
+
+  
+  <div class="content"><div class="field field-type-text field-field-maintitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Creating a multi-resolution favicon including transparency with the GIMP        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-featuretext">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>This article was first published by Dave Lane on the Egressive website on 09-Aug-2008</p>
+<p>Egressive was purchased by Catalyst IT on 1 December 2012. Read more on the <a href="http://catalyst.net.nz/news/catalyst-acquires-egressive">acquisition of Egressive</a>.&nbsp;</p>
+        </div>
+        </div>
+  <div class="clear"></div>
+</div>
+</div>
+
+</div>
+<p>This morning, I decided to create a <em>proper</em> favicon, namely a multi-resolution favicon with transparency. For those who don't know what <a href="http://en.wikipedia.org/wiki/Favicon">Favicons</a>
+ are, they're little graphical icons which represent specific websites, 
+that are particularly useful for distinguishing between tabs in modern 
+tabbed web browsers (like <a href="http://www.opera.com/">Opera</a>, <a href="http://mozilla.com/">Firefox</a>, <a href="http://www.konqueror.org/">Konqueror</a>, and <a href="http://www.apple.com/safari/">Safari</a>... and much more recently, Microsoft's laggard Internet Explorer 7.0) and other <a href="http://en.wikipedia.org/wiki/Tabbed_document_interface">tabbed document interfaces</a>. They have a further application: recent developments on the web like Mozilla's (open source) <a href="http://en.wikipedia.org/wiki/Mozilla_Prism">Prism</a> project and Adobe's (proprietary) <a href="http://www.adobe.com/products/air/">Air</a>
+ allow you to turn web applications into something that behaves more 
+like a desktop application. These require icons for new contexts like 
+application launchers, menu bars, toolbars, and on the desktop.</p>
+<p><img alt="favicon fullsize logo" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_fullsize_logo_0.png" style="float: right; width: 250px; height: 273px;">Most
+ favicons are created only for the web browser context, which by default
+ is 16x16 pixels. This is fine in that context, but increasingly, 
+favicons are being used in other contexts as well, usually larger. Low 
+resolution 16x16 favicons look ghastly and pixelated when enlarged to 
+sizes like 32x32, 64x64, or 128x128 pixels for other contexts, like the 
+application icons for application launcher bars and application 
+toolbars.</p>
+<p>Although most <a href="http://www.w3.org/">Web Standards</a> 
+compliant browsers can deal with favicons in a variety of formats like 
+GIF, JPG or the more suitable PNG formats, the Microsoft Windows Icon 
+format (.ico) is the lowest common denominator for favicons, in that 
+they're recognised by MS's Internet Explorer 6.0 and later versions (as 
+well as Opera, Firefox, Konqueror, Safari, etc.). ICO files have the 
+additional property that they (somewhat non-intuitively) can contain 
+multiple images within one file, namely multiple versions of the same 
+icon, but at different colour depths and pixel resolutions.</p>
+<p>To provide the maximum favicon compatibility and utility, this 
+morning I wanted to work out how to create a multi-resolution 
+favicon.ico file, preferably with proper full alpha transparency (which 
+allows variable transparency, allowing icons without coloured 
+backgrounds to look smooth and professional on any background over which
+ they might be superimposed).</p>
+<p><img alt="favicon layer view-cropped" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_layer_view-cropped.png" style="float: right; width: 238px; height: 237px;">On
+ principle, I like to achieve my computing ends using only open source 
+software. A quick Google search indicated that I could create .ico files
+ with the excellent free image manipulation package, <a href="http://gimp.org/">The GIMP</a>
+ (available for Linux, other X11 platforms, MS Windows, and Mac OS X - 
+it can even work with most files produced by Adobe's heavily proprietary
+ Photoshop). Unsurprisingly, I run it happily on Linux (in fact, I first
+ used the GIMP on Linux in 1996, about 8 years before it was available 
+for Windows or OS X...), and encourage you to try it on whatever 
+computing platform you use most often.</p>
+<p>Here's how I did it:</p>
+<ul>
+<li>Fire up <a href="http://gimp.org/">The GIMP</a> on your machine. Download it for free if you don't already have it. The GIMP, and its open source counterpart <a href="http://inkscape.org/">Inkscape</a>
+ make great replacements for the heavyweight (and very costly) Adobe 
+Photoshop and Illustrator suite for raster and vector graphics 
+respectively...</li>
+<li>Do whatever you have to to load up a large version of the brand or 
+logo you want to make into a favicon. I recommend that it be at least 
+128 by 128 pixels in size.</li>
+<li>Copy the image (to avoid inadvertently saving over your actual logo image!) - I used File-&gt;Save As... to achieve this.</li>
+<li>Make your logo a square image, i.e. with the same pixel width and 
+height. The easiest way to do this is to use the right-click menu over 
+the image itself - go to Image-&gt;Canvas Size... Go to the part of the 
+window where you can set the canvas dimensions, and click on the chain 
+links. This allows you to specify the width and the height for the image
+ independently - I recommend making the small of the two dimensions 
+equal to the larger (you might want to centre the resulting image by 
+dragging with your mouse). Or, if your logo image allows it, you can use
+ the Cropping tool to crop the image into a square shape so long as you 
+don't lose anything important (e.g. part of the logo, drop shadows, 
+etc.). Don't be too precious about it, and consider how well aspects of 
+your logo will come across when they're tiny. For instance, if your logo
+ includes text... I'd suggest you lose it. It'll be a little illegible 
+blob at 16x16 pixels.</li>
+<li><img alt="favicon save as ms icon dialog" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_save_as_ms_icon_dialog_0.png" style="float: right; width: 300px; height: 79px;">Once
+ you've got a square logo, you can create reduced size versions of it. 
+The standard sizes for icons are 128x128, 64x64, 48x48, 32x32, and 16x16
+ pixels. Flatten your image (if it has layers) and then save it into 
+each of these sizes in turn. To do so:
+<ul>
+<li>Right click over the image, select Image-&gt;Scale Image...</li>
+<li>Put in the width of the image, e.g. 128. If you then hit TAB or 
+click in the height field, you'll see that it will automatically jump to
+ the same dimension. That's because, by default, The GIMP scales image 
+dimensions in proportion to the original image size so that the image 
+content doesn't get distorted (i.e. look too fat or to thin) in the 
+process of scaling the image - that's what the little "chain" icon to 
+the right of the image dimensions indicates.</li>
+<li>Click "Scale" to scale the image.</li>
+<li><img alt="favicon save as bpp" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_save_as_bpp_0.png" style="float: right; width: 250px; height: 279px;">Save
+ your image (File-&gt;Save As) as, e.g. favicon64.png (if it's the 64x64
+ version) or favicon16.png, etc. By providing the .png file suffix, The 
+GIMP will automatically save it in PNG<a href="http://catalyst.net.nz/web/20121018074631/http://egressive.com/tutorial/creating-a-multi-resolution-favicon-including-transparency-with-the-gimp">*</a> format. It's probably most convenient to put these files into the same directory as the original logo image...</li>
+<li>The GIMP will give you various PNG saving options - it's safe to hit "OK", i.e. select the defaults, for all of them.</li>
+<li>Now that the reduced icon image is saved, hit CTRL-Z to undo the 
+resize - you should be looking at the full-size logo image again - and 
+repeat the process for another icon size.</li>
+</ul>
+</li>
+<li>Once you have created the full gamut of icon file sizes, you can 
+create the .ico image. Open the largest of the icon images in The GIMP. 
+Right-click on the image and select File-&gt;Open as Layers... and 
+select all the other icon images.</li>
+<li>This will create a single image with a layer containing each of the other icon images.</li>
+<li>Save the image as a Microsoft Windows Icon (.ico) image - 
+File-&gt;Save As..., and then type in the filename, e.g. favicon.ico. 
+(this will automatically select the .ico format)</li>
+<li>Upon saving the .ico image, you can specify the bits-per-pixel (bpp)
+ for each layer independently. I just left mine at the defaults.</li>
+<li>You're done - now copy the favicon.ico to your webserver, and ensure
+ that it's in the right place (by default, IE 6.0 looks for /favicon.ico
+ in your top level webserver directory). Give it a try! Note - if you 
+already had a favicon of some sort for the site, it might already be 
+cached by your browser, and as such might take a while to be visible. 
+Try restarting your browser, or, better yet if you're using a crappy 
+browser like Microsoft's Internet Explorer 6 or 7... download and 
+install Firefox - the favicon won't be cached in that browser yet!</li>
+</ul>
+<p><img alt="favicon image with all layers" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_image_with_all_layers.png" style="float: right; width: 380px; height: 340px;">The
+ result is a .ico file with multiple versions of your logo at different 
+resolutions. Now, depending on the context, visitors to your site will 
+see your nice favicon in their browser tabs, superimposed on whatever 
+browser chrome they're using in all of its transparent glory. Similarly,
+ if they use Adobe Air or Prism to create an icon for your site on their
+ desktop, or want to save your site on their iPhones, they should get 
+the appropriately sized full-resolution icon for their launch menu, or 
+desktop! One point to note: there's no reason that the logo needs to be 
+the same at each resolution. I suppose you could add a bit of text, e.g.
+ a company name, etc. for the higher resolution versions of the logo, 
+but you'd have to test things to make sure it's readable at the relevant
+ resolutions.<br><img alt="favicon prism desktop icon" src="Creating%20a%20multi-resolution%20favicon%20including%20transparency%20with%20the%20GIMP%20%7C%20Catalyst%20IT%20-%20New%20Zealand%27s%20leading%20open%20source%20company-Dateien/favicon_prism_desktop_icon.png" style="float: left; width: 357px; height: 163px;"></p>
+<p><a name="PNG-note" title="PNG-note"></a>*Choose your file format 
+wisely. TIFs (often used by Mac people) are a good image format for 
+high-fidelity photo work, but totally inappropriate for the web, because
+ they are bulky (lots of bytes) and tend not to be supported by most 
+browsers. JPGs are an option, but if your logo is a line drawing or a 
+computer-generated image (as most logos are), they tend to provide a 
+poor reproduction due to their "lossy compression algorithms" (don't ask
+ - beyond the scope of this article) particularly at small sizes - plus 
+JPG doesn't support transparency at all. GIF images offer only 1 bit 
+alpha transparency (on or off) which leads to icons with jagged edges 
+that tend to blend with their backgrounds like oil does with water (i.e.
+ not). The <a href="http://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG format</a>
+ supports 8 to 32 bit transparency, allowing for those smooth feathered 
+edges that look much better to even the untrained eye, so that's the 
+best starting point. It's specifically designed for the web, but 
+unfortunately, Microsoft didn't have the foresight to implement support 
+for PNG's graphical capabilities in IE 6. Luckily, IE6 is slowly dying 
+out on the Web (as people move to better browsers like <a href="http://getfirefox.com/">Firefox</a>).</p>
+  
+   </div>
+  
+  </div> <!-- /.node -->
+		          </div>
+
+        
+      </div></div> <!-- /.section, /#content -->
+
+              <div id="navigation"><div class="section clearfix">
+
+            <ul class="nice-menu nice-menu-down sf-js-enabled" id="nice-menu-0"><li class="menu-75 menu-path-node-1 first  odd "><a href="http://catalyst.net.nz/home" title="">Home</a></li>
+<li class="menu-48 menuparent menu-path-node-42 even "><a href="http://catalyst.net.nz/company" title="">Company</a><ul style="visibility: hidden; display: none;"><li class="menu-1908 menu-path-node-228 first  odd "><a href="http://catalyst.net.nz/company/why-choose-catalyst" title="">Why Choose Catalyst?</a></li>
+<li class="menu-52 menu-path-node-43 even "><a href="http://catalyst.net.nz/company/catalyst-team" title="">The Catalyst Team</a></li>
+<li class="menu-1909 menu-path-node-229 odd "><a href="http://catalyst.net.nz/company/what-our-clients-say" title="">What Our Clients Say</a></li>
+<li class="menu-76 menu-path-node-51 even "><a href="http://catalyst.net.nz/company/jobs" title="">Jobs at Catalyst</a></li>
+<li class="menu-2917 menu-path-node-3077 odd "><a href="http://catalyst.net.nz/academy" title="Catalyst Open Source Academy">Open Source Academy</a></li>
+<li class="menu-2021 menu-path-node-237 even "><a href="http://catalyst.net.nz/company/news" title="">Catalyst News</a></li>
+<li class="menu-3393 menu-path-node-23503 odd "><a href="http://catalyst.net.nz/company/partnerships-collaboration" title="Partnerships &amp; Collaboration">Partnerships &amp; Collaboration</a></li>
+<li class="menu-81 menu-path-node-46 even  last "><a href="http://catalyst.net.nz/company/contact-us" title="">Contact Us</a></li>
+</ul>
+</li>
+<li class="menu-73 menuparent menu-path-node-22 odd "><a href="http://catalyst.net.nz/services" title="">Services</a><ul style="visibility: hidden; display: none;"><li class="menu-79 menu-path-node-24 first  odd "><a href="http://catalyst.net.nz/services/software-development" title="">Software Development</a></li>
+<li class="menu-78 menu-path-node-55 even "><a href="http://catalyst.net.nz/services/support" title="">Open Source Support</a></li>
+<li class="menu-774 menu-path-node-167 odd "><a href="http://catalyst.net.nz/services/consulting" title="">Open Source Consulting</a></li>
+<li class="menu-80 menu-path-node-25 even "><a href="http://catalyst.net.nz/services/hosting" title="">Hosting Services</a></li>
+<li class="menu-3862 menu-path-node-23549 odd "><a href="http://catalyst.net.nz/services/CloudServices" title="">Cloud Services</a></li>
+<li class="menu-3994 menu-path-catalystnetnz-services-samba even "><a href="http://catalyst.net.nz/services/samba" title="">Samba Services</a></li>
+<li class="menu-2258 menu-path-node-263 odd "><a href="http://catalyst.net.nz/services/mobile" title="">Mobile Services</a></li>
+<li class="menu-772 menu-path-node-165 even "><a href="http://catalyst.net.nz/services/design" title="">Design Services</a></li>
+<li class="menu-2002 menu-path-node-258 odd "><a href="http://catalyst.net.nz/services/testing" title="">Testing Services</a></li>
+<li class="menu-3320 menu-path-node-23459 even  last "><a href="http://catalyst.net.nz/services/training-services" title="Training Services">Training Services</a></li>
+</ul>
+</li>
+<li class="menu-1180 menu-path-node-30 even "><a href="http://catalyst.net.nz/clients" title="">Clients</a></li>
+<li class="menu-53 menuparent menu-path-node-47 odd last "><a href="http://catalyst.net.nz/open-source" title="">Open Source</a><ul style="visibility: hidden; display: none;"><li class="menu-77 menu-path-node-23 first  odd "><a href="http://catalyst.net.nz/open-source/open-source-expertise" title="">Open Source Expertise</a></li>
+<li class="menu-3992 menu-path-node-23583 even "><a href="http://catalyst.net.nz/open-source/sponsorships" title="Catalyst Sponsorships">Catalyst Sponsorships</a></li>
+<li class="menu-1185 menu-path-node-193 odd "><a href="http://catalyst.net.nz/open-source/catalyst-contributors" title="">Catalyst Contributors</a></li>
+<li class="menu-1184 menu-path-node-192 even  last "><a href="http://catalyst.net.nz/open-source/project-contributions" title="">Project Contributions</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        </div></div> <!-- /.section, /#navigation -->
+      
+      
+      
+    </div>
+    	</div> <!-- /#main, /#main-wrapper -->
+    
+		    <div id="breadcrumb-wrapper">
+		    <div id="breadcrumb-inner">
+	    		<div class="breadcrumb-label">
+	    	    	<p>YOU ARE HERE:</p>		
+	    		</div>
+	    		<div class="breadcrumb"><a href="http://catalyst.net.nz/">Home</a> ›› Creating a multi-resolution favicon including transparency with the GIMP</div>    	    </div><!-- #breadcrump-inner -->
+		</div><!-- #breadcrump-wrapper -->
+ 	
+          <div id="footer"><div class="section">
+
+        <div class="region region-footer">
+  <div id="block-menu_block-1" class="block block-menu_block first last region-odd odd region-count-1 count-1">
+	<div class="block-inner">
+	  	
+		<div class="content">
+			<div class="menu_block_wrapper menu-block-1 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="expanded first menu-mlid-511"><a href="http://catalyst.net.nz/company" title="Company">COMPANY</a><ul class="menu"><li class="leaf first menu-mlid-1891"><a href="http://catalyst.net.nz/company/why-choose-catalyst" title="">Why Choose Catalyst?</a></li>
+<li class="leaf menu-mlid-493"><a href="http://catalyst.net.nz/company/catalyst-team" title="">The Catalyst Team</a></li>
+<li class="leaf menu-mlid-2004"><a href="http://catalyst.net.nz/company/what-our-clients-say" title="">What Our Clients Say</a></li>
+<li class="leaf menu-mlid-497"><a href="http://catalyst.net.nz/company/jobs" title="">Jobs at Catalyst</a></li>
+<li class="leaf menu-mlid-1956"><a href="http://catalyst.net.nz/company/news" title="">Catalyst News</a></li>
+<li class="leaf menu-mlid-3390"><a href="http://catalyst.net.nz/company/privacy-policy" title="">Privacy Policy</a></li>
+<li class="leaf last menu-mlid-496"><a href="http://catalyst.net.nz/company/contact-us" title="">Contact Us</a></li>
+</ul></li>
+<li class="expanded menu-mlid-510"><a href="http://catalyst.net.nz/services" title="">SERVICES</a><ul class="menu"><li class="leaf first menu-mlid-519"><a href="http://catalyst.net.nz/services/software-development" title="Software Development">Software Development</a></li>
+<li class="leaf menu-mlid-522"><a href="http://catalyst.net.nz/services/support" title="">Open Source Support</a></li>
+<li class="leaf menu-mlid-512"><a href="http://catalyst.net.nz/services/consulting" title="Planning &amp; Strategy">Open Source Consulting</a></li>
+<li class="leaf menu-mlid-520"><a href="http://catalyst.net.nz/services/hosting" title="">Hosting Services</a></li>
+<li class="leaf menu-mlid-513"><a href="http://catalyst.net.nz/services/design" title="Visual Design">Design Services</a></li>
+<li class="leaf menu-mlid-2003"><a href="http://catalyst.net.nz/services/testing" title="
+">Testing Services</a></li>
+<li class="leaf last menu-mlid-3321"><a href="http://catalyst.net.nz/services/training-services" title="">Training Services</a></li>
+</ul></li>
+<li class="expanded menu-mlid-526"><a href="http://catalyst.net.nz/open-source" title="">OPEN SOURCE</a><ul class="menu"><li class="leaf first menu-mlid-530"><a href="http://catalyst.net.nz/open-source/open-source-expertise" title="Open Source Expertise">Open Source Expertise</a></li>
+<li class="leaf menu-mlid-753"><a href="http://catalyst.net.nz/open-source/catalyst-contributors" title="Catalyst Contributors">Catalyst Contributors</a></li>
+<li class="leaf last menu-mlid-752"><a href="http://catalyst.net.nz/open-source/project-contributions" title="Project Contributions">Project Contributions</a></li>
+</ul></li>
+<li class="expanded menu-mlid-524"><a href="http://catalyst.net.nz/clients" title="">CLIENTS</a><ul class="menu"><li class="leaf first last menu-mlid-525"><a href="http://catalyst.net.nz/clients" title="
+	Portfolio
+">Showcase</a></li>
+</ul></li>
+<li class="expanded last menu-mlid-528"><a href="http://catalyst.net.nz/" title="">HOME</a><ul class="menu"><li class="leaf first last menu-mlid-527"><a href="https://wrms.catalyst.net.nz/" title="">Client Work Requests</a></li>
+</ul></li>
+</ul></div>
+  		
+		</div>
+	
+	  	</div><!-- .block-inner -->
+</div> <!-- /.block -->
+</div><!-- /.region -->
+
+      </div></div> <!-- /.section, /#footer -->
+    
+  </div></div> <!-- /#page, /#page-wrapper -->
+
+  <div class="region region-page-closure">
+  <div id="block-menu_block-2" class="block block-menu_block first last region-odd even region-count-1 count-2">
+	<div class="block-inner">
+	  	
+		<div class="content">
+			<div class="menu_block_wrapper menu-block-2 menu-name-menu-closure-link parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="leaf first menu-mlid-536"><a href="http://catalyst.net.nz/company/contact-us" title="Contact Us">Contact Us</a></li>
+<li class="leaf menu-mlid-537"><a href="http://catalyst.net.nz/" title="Home">Home</a></li>
+<li class="leaf last menu-mlid-538"><span class="nolink">Copyright © 1997-2013 Catalyst IT. Powered by Drupal</span></li>
+</ul></div>
+  		
+		</div>
+	
+	  	</div><!-- .block-inner -->
+</div> <!-- /.block -->
+</div><!-- /.region -->
+
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9848624-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+
+
+<div><!--[if lt IE 7]><div id='sevenUpCallbackSignal'></div>       <div id='sevenUpLightbox' style='display:block;position:absolute;top:25%;text-align:center;z-index:1002;overflow:hidden;width:100%'>         <div style='width:550px;margin:0px auto;text-align:left;'>           <div style='background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/curve-top.gif);font-size:1px;height:18px;width:550px;'></div>           <div style='background:#1a1a1a;color:#999;font: 12px Arial, Helvetica, sans-serif;position:relative;text-align:center;width:550px;'>             <div style='background:transparent url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/close.gif);height:26px;position:absolute;right:6px;top:-10px;width:26px;'>               <a href='#' onclick='sevenUp.close()' style='display:block;height:26px;text-indent:-9999px;width:26px;'>Close</a>             </div>             <h1 style='color:#FFF;font-size:18px;margin:10px auto 15px auto;'>Your web browser is not fully supported by this website</h1><p style='font-size:14px;color:#fff;font-weight: bold;margin-bottom:20px'>Some elements may not display correctly</p>             <p style='font-size:14px;margin:8px 0 11px;'>You can easily upgrade to the latest version</p>             <a href='http://www.microsoft.com/windows/internet-explorer'><img src='http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/IE.jpg' alt='Internet Explorer 8' style='border:0;'/></a>             <p style='margin:2px 0 22px;'><a href='http://www.microsoft.com/windows/internet-explorer' style='color:#999;text-decoration:none;'>Internet Explorer 8</a></p>             <div class='whyUpgrade' style='float:left;text-align:left;padding-left:35px;width:270px;'>               <h3 style='color:#fff;font-size:14px;margin:0;'>Why should I upgrade?</h3>               <dl style='line-height: 1.4;margin:7px 0 0 2px'>                 <dt style='color:#e6e6e6'>Web sites load faster</dt>                 <dd style='font-size:11px;margin-left:20px;'>often double the speed of this older version.</dd>                 <dt style='color:#e6e6e6'>Web sites render correctly</dt>                 <dd style='font-size:11px;margin-left:20px;'>with more web standards compliance.</dd>                 <dt style='color:#e6e6e6'>Tabs Interface</dt>                 <dd style='font-size:11px;margin-left:20px;'>lets you view multiple sites in one window.</dd>                 <dt style='color:#e6e6e6'>Safer browsing</dt>                 <dd style='font-size:11px;margin-left:20px;'>with better security and phishing protection.</dd>                 <dt style='color:#e6e6e6'>Convenient Printing</dt>                 <dd style='font-size:11px;margin-left:20px;'>with fit-to-page capability.</dd>               </dl>             </div>             <div class='otherBrowsers' style='float:left;font-size:14px;text-align:left;width:220px;margin-left:20px'>               <h3 style='color:#fff;font-size:14px;margin:0;'>Explore other browsers</h3>               <ul style='list-style:none;margin:0;padding:9px 0 0 0'>         				<li style='height:39px;background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/Chrome.jpg) no-repeat;'><a href='http://www.google.com/chrome' style='color:#e6e6e6;display:block;padding:4px 0 8px 44px;text-decoration:none;width:150px;'>Google Chrome</a></li>         				<li style='height:39px;background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/Firefox.jpg) no-repeat;'><a href='http://getfirefox.com' style='color:#e6e6e6;display:block;padding:4px 0 8px 44px;text-decoration:none;width:140px;'>Mozilla Firefox</a></li>         				<li style='height:39px;background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/Opera.jpg) no-repeat;'><a href='http://www.opera.com/download/' style='color:#e6e6e6;display:block;padding:4px 0 8px 44px;text-decoration:none;width:140px;'>Opera</a></li>         				<li style='height:39px;background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/Safari.jpg) no-repeat;'><a href='http://www.apple.com/safari/download/' style='color:#e6e6e6;display:block;padding:4px 0 8px 44px;text-decoration:none;width:140px;'>Apple Safari</a></li>               </ul>             </div>             <div style='clear:both;'><a href='#' style='bottom:-10px;color:#e6e6e6;font-size:14px;position:absolute;right:14px;text-decoration:none;' onclick='sevenUp.quitBuggingMe()'>quit bugging me</a></div>           </div>           <div style='background:url(http://dl.getdropbox.com/u/48374/sevenup/plugins/black/images/curve-bottom.gif);font-size:1px;height:18px;width:550px;'></div>         </div>       </div><![endif]--></div></body></html>
